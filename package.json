@@ -1,0 +1,40 @@
+{
+  "name": "parcel-boilerplate",
+  "version": "0.0.1",
+  "description": "a boilerplate for using parcelJS",
+  "main": "index.js",
+  "scripts": {
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*.{js,json,css,md}": [
+      "eslint",
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jh3y/parcel-boilerplate.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jh3y/parcel-boilerplate/issues"
+  },
+  "homepage": "https://github.com/jh3y/parcel-boilerplate#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.2.5",
+    "babel-eslint": "^8.2.1",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.17.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^6.1.0",
+    "parcel-bundler": "^1.5.1",
+    "parcel-plugin-pug": "^0.2.5",
+    "prettier": "1.10.2",
+    "stylus": "^0.54.5"
+  },
+  "dependencies": {}
+}
